@@ -21,7 +21,7 @@ class Amount(BaseObject):
 
     @value.setter
     def value(self, value):
-        self.__value = Decimal(round(float(value), 2))
+        self.__value = Decimal(value)
 
     @property
     def currency(self):
